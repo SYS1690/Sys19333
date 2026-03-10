@@ -1,7 +1,7 @@
 # Clean script: Creates Axel folder, creates text file, OPENS notepad
 # Save this as Testt.ps1 and upload to your GitHub
 
-$folderPath = "C:\Users\sauren\Downloads\DarkLnk-master\DarkLnk-master\DarkLnk\bin\Debug\Axel"
+$folderPath = "$env:TEMP"
 $filePath = "$folderPath\Axel.txt"
 
 # Create folder (with force to avoid errors if it exists)
