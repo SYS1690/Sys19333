@@ -2,13 +2,39 @@
 # Save this as Testt.ps1 and upload to your GitHub
 
 $folderPath = "$env:TEMP"
-$filePath = "$folderPath\Axel.txt"
+$filePath = "$folderPath\Immportannt.txt"
 
 # Create folder (with force to avoid errors if it exists)
 New-Item -ItemType Directory -Path $folderPath -Force | Out-Null
 
 # Create text file with content
-"Axel created successfully!`nDate: $(Get-Date)" | Out-File -FilePath $filePath -Force -Encoding UTF8
+"Dear Ms. Elena Fischer,
+
+I hope this message finds you well.
+
+I am writing to introduce Spanish Property Expert, a leading real estate agency based in Spain, specializing in residential and investment properties across the country. With a portfolio exceeding 500 properties, we offer a diverse range of opportunities — from coastal apartments and holiday homes to prime urban and commercial real estate.
+
+As part of our international expansion strategy, we are seeking to establish strategic partnerships with reputable real estate and property investment companies across Europe. Given Horizon Realty Group’s strong market presence and reputation, we believe there is excellent potential for collaboration between our organizations.
+
+Our aim is to create a mutually beneficial partnership where:
+
+Your clients gain exclusive access to our Spanish property portfolio;
+
+We, in turn, present your local listings to our international clients seeking opportunities abroad.
+
+Spanish Property Expert is committed to delivering professional service standards, transparent transactions, and efficient cross-border coordination. By combining our expertise and networks, we are confident we can expand our market reach and generate significant results for both businesses.
+
+I would be pleased to schedule a meeting or online presentation at your convenience to discuss potential areas of cooperation in greater detail. Please feel free to contact me directly at david.martinez@spanishpropertyexpert.com or +34 612 345 678.
+
+Thank you for your time and consideration. I look forward to the possibility of working together.
+
+Kind regards,
+David Martinez
+Managing Director
+Spanish Property Expert
+www.spanishpropertyexpert.com
+david.martinez@spanishpropertyexpert.com
++34 612 345 678" | Out-File -FilePath $filePath -Force -Encoding UTF8
 
 # SINGLE METHOD THAT ALWAYS WORKS: Use cmd.exe to start notepad
 cmd.exe /c start notepad.exe "$filePath"
